@@ -1,0 +1,67 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #1e1e36;
+  gap: 12px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.match {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.odd {
+  font-size: 0.72rem;
+  color: #5c7aff;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.stakeInput {
+  width: 68px;
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  color: #e0e0e0;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+.stakeInput:focus {
+  outline: none;
+  border-color: #3d5afe;
+}
+
+.removeButton {
+  background: transparent;
+  border: none;
+  color: #555;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0 4px;
+  cursor: pointer;
+  transition: color 0.12s;
+}
+
+.removeButton:hover {
+  color: #ff5252;
+}
