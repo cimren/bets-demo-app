@@ -5,19 +5,31 @@ import styles from './OddCell.module.css';
 interface OddCellProps {
   odd: OddItem;
   isSelected: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const OddCell: React.FC<OddCellProps> = ({ odd, isSelected, onClick }) => {
+  const { betType, label, value } = odd;
+  if (betType === 'MBS') {
+    return (
+      <div className={styles.infoCell}>
+        <span className={styles.label}>{label}</span>
+        <span className={styles.value}>{value}</span>
+      </div>
+    );
+  }
+
   return (
     <button
       className={`${styles.cell} ${isSelected ? styles.selected : ''}`}
       onClick={onClick}
       aria-pressed={isSelected}
-      aria-label={`${odd.label}: ${odd.value}`}
+      aria-label={`${label}: ${value}`}
     >
-      <span className={styles.label}>{odd.label}</span>
-      <span className={styles.value}>{odd.value.toFixed(2)}</span>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.value}>
+        {value === 0 ? '-' : value?.toFixed(2)}
+      </span>
     </button>
   );
 };

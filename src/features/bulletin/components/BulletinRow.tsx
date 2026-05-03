@@ -13,7 +13,11 @@ interface BulletinRowProps {
 const BulletinRow: React.FC<BulletinRowProps> = ({ match, selectedOddIds }) => {
   const dispatch = useDispatch();
 
-  const formattedTime = new Date(match.startTime).toLocaleTimeString([], {
+  const startDate = new Date(match.startTime);
+  const formattedDateTime = startDate.toLocaleString('tr-TR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
   });
@@ -23,9 +27,9 @@ const BulletinRow: React.FC<BulletinRowProps> = ({ match, selectedOddIds }) => {
       <div className={styles.matchInfo}>
         <span className={styles.league}>{match.league}</span>
         <span className={styles.teams}>
-          {match.homeTeam} — {match.awayTeam}
+          <b>{match.id}</b> {match.homeTeam} — {match.awayTeam}
         </span>
-        <span className={styles.time}>{formattedTime}</span>
+        <span className={styles.time}>{formattedDateTime}</span>
       </div>
 
       <div className={styles.odds}>
@@ -35,16 +39,17 @@ const BulletinRow: React.FC<BulletinRowProps> = ({ match, selectedOddIds }) => {
             odd={odd}
             isSelected={selectedOddIds.has(odd.id)}
             onClick={() => {
-              dispatch(
-                toggleSelection({
-                  oddId: odd.id,
-                  matchId: match.id,
-                  matchLabel: `${match.homeTeam} — ${match.awayTeam}`,
-                  oddLabel: odd.label,
-                  oddValue: odd.value,
-                  stake: 0,
-                }),
-              );
+              odd.value !== 0 &&
+                dispatch(
+                  toggleSelection({
+                    oddId: odd.id,
+                    matchId: match.id,
+                    matchLabel: `${match.homeTeam} — ${match.awayTeam}`,
+                    oddLabel: odd.label,
+                    oddValue: odd.value,
+                    stake: 0,
+                  }),
+                );
             }}
           />
         ))}

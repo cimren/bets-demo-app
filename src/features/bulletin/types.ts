@@ -3,7 +3,7 @@ export interface OddItem {
   matchId: string;
   label: string;
   value: number;
-  marketType: string;
+  betType: string;
 }
 
 export interface Match {

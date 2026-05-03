@@ -10,13 +10,16 @@ interface CouponItemProps {
 
 const CouponItem: React.FC<CouponItemProps> = ({ selection }) => {
   const dispatch = useDispatch();
+  const { matchId, matchLabel, oddLabel, oddValue } = selection;
 
   return (
     <li className={styles.item}>
       <div className={styles.info}>
-        <span className={styles.match}>{selection.matchLabel}</span>
+        <span className={styles.match}>
+          <b>{matchId}</b> {matchLabel}
+        </span>
         <span className={styles.odd}>
-          {selection.oddLabel} @ {selection.oddValue.toFixed(2)}
+          {oddLabel} @ {oddValue.toFixed(2)}
         </span>
       </div>
 

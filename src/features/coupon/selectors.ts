@@ -1,3 +1,4 @@
+import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 import { CouponSelection } from './types';
 
@@ -14,5 +15,7 @@ export const selectPossibleWin = (state: RootState): number => {
   return selectTotalOdd(state) * state.coupon.totalStake;
 };
 
-export const selectSelectedOddIds = (state: RootState): Set<string> =>
-  new Set(state.coupon.selections.map((s) => s.oddId));
+export const selectSelectedOddIds = createSelector(
+  selectCouponSelections,
+  (selections) => new Set(selections.map((s) => s.oddId)),
+);

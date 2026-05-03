@@ -9,7 +9,7 @@ const mockOdd: OddItem = {
   matchId: 'match-1',
   label: '1',
   value: 1.85,
-  marketType: '1X2',
+  betType: '1X2',
 };
 
 const renderOddCell = (
