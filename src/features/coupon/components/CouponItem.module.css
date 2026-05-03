@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  border-bottom: 1px solid #1e1e36;
+  border-bottom: 1px solid #254225;
   gap: 12px;
 }
 
@@ -25,7 +25,7 @@
 
 .odd {
   font-size: 0.72rem;
-  color: #5c7aff;
+  color: #e8820a;
   font-weight: 600;
 }
 
@@ -38,8 +38,8 @@
 
 .stakeInput {
   width: 68px;
-  background: #0f0f1a;
-  border: 1px solid #2a2a4a;
+  background: #141f14;
+  border: 1px solid #2a542a;
   border-radius: 4px;
   color: #e0e0e0;
   padding: 4px 8px;
@@ -48,7 +48,7 @@
 
 .stakeInput:focus {
   outline: none;
-  border-color: #3d5afe;
+  border-color: #00c853;
 }
 
 .removeButton {

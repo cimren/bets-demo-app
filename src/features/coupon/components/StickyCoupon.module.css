@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  background: #13132a;
-  border-top: 2px solid #3d5afe;
+  background: #182b18;
+  border-top: 3px solid #e8820a;
   z-index: 100;
   max-height: 55vh;
   width: 320px;
@@ -16,19 +16,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
-  border-bottom: 1px solid #1e1e36;
+  border-bottom: 1px solid #254225;
   flex-shrink: 0;
 }
 
 .title {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #fff;
+  color: #e8820a;
 }
 
 .clearButton {
   background: transparent;
-  border: 1px solid #3a3a5a;
+  border: 1px solid #366036;
   color: #888;
   border-radius: 4px;
   padding: 4px 10px;
@@ -55,7 +55,7 @@
   align-items: center;
   gap: 20px;
   padding: 10px 16px;
-  border-top: 1px solid #1e1e36;
+  border-top: 1px solid #254225;
   flex-shrink: 0;
 }
 
@@ -67,7 +67,7 @@
 
 .statLabel {
   font-size: 0.65rem;
-  color: #666;
+  color: #888;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -79,7 +79,7 @@
 
 .betButton {
   margin-left: auto;
-  background: #3d5afe;
+  background: #00c853;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -92,7 +92,7 @@
 }
 
 .betButton:hover {
-  background: #5c7aff;
+  background: #2ed866;
 }
 
 @media (max-width: 768px) {

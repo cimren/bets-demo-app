@@ -11,15 +11,15 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
-  background: #1a1a2e;
-  border-bottom: 1px solid #2a2a4a;
+  background: #1e3820;
+  border-bottom: 2px solid #e8820a;
 }
 
 .title {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #fff;
+  color: #e8820a;
   letter-spacing: 0.02em;
 }
 

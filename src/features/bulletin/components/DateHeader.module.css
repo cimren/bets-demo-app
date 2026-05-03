@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  background: #0f0f1a;
-  border-bottom: 1px solid #1e1e36;
+  background: #141f14;
+  border-bottom: 1px solid #254225;
+  border-left: 3px solid #e8820a;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -12,7 +13,7 @@
 .header span {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #3d5afe;
+  color: #e8820a;
   text-transform: capitalize;
   letter-spacing: 0.04em;
 }
