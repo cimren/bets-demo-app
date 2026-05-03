@@ -2,6 +2,7 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: 16px;
 }
 
 .totalHeight {
@@ -14,4 +15,10 @@
   top: 0;
   left: 0;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .scrollContainer {
+    padding-bottom: 260px;
+  }
 }

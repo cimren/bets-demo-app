@@ -16,6 +16,10 @@ const BulletinTable: React.FC = () => {
     getScrollElement: () => parentRef.current,
     estimateSize: () => ROW_HEIGHT,
     overscan: 5,
+    measureElement:
+      typeof window !== 'undefined'
+        ? (el) => el.getBoundingClientRect().height
+        : undefined,
   });
 
   // Select the set of currently selected oddIds from Redux state so
@@ -31,6 +35,8 @@ const BulletinTable: React.FC = () => {
         {rowVirtualizer.getVirtualItems().map((virtualRow) => (
           <div
             key={virtualRow.key}
+            data-index={virtualRow.index}
+            ref={rowVirtualizer.measureElement}
             className={styles.virtualRow}
             style={{ transform: `translateY(${virtualRow.start}px)` }}
           >

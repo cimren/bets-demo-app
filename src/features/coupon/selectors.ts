@@ -5,7 +5,9 @@ export const selectCouponSelections = (state: RootState): CouponSelection[] =>
   state.coupon.selections;
 
 export const selectTotalOdd = (state: RootState): number => {
-  return state.coupon.selections.reduce((acc, s) => acc * s.oddValue, 1);
+  return state.coupon.selections.length
+    ? state.coupon.selections.reduce((acc, s) => acc * s.oddValue, 1)
+    : 0;
 };
 
 export const selectPossibleWin = (state: RootState): number => {
