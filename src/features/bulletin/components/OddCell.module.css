@@ -66,12 +66,12 @@
 
 @media (max-width: 768px) {
   .infoCell {
-    width: 100%;
+    width: 52px;
     height: 40px;
   }
 
   .cell {
-    width: 100%;
+    width: 52px;
     height: 40px;
   }
 }

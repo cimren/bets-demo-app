@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-  min-width: 0;
+  max-width: 240px;
 }
 
 .league {
@@ -43,7 +43,8 @@
 .odds {
   display: flex;
   gap: 2px;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -80,9 +81,8 @@
   }
 
   .odds {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    overflow-x: unset;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
   }
 }
