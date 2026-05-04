@@ -1,6 +1,6 @@
 import React from 'react';
-import BulletinTable from '../components/BulletinTable';
-import StickyCoupon from '../components/StickyCoupon';
+import BulletinTable from '../components/bulletin/BulletinTable';
+import StickyCoupon from '../components/coupon/StickyCoupon';
 import styles from './App.module.css';
 
 const App: React.FC = () => {

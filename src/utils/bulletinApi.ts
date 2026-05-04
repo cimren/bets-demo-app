@@ -42,9 +42,7 @@ function makeOdd(
   betValue: string | undefined,
   betType: string,
 ): OddItem | null {
-  // if (!betValue) return null;
   const value = betValue ? parseFloat(betValue) : 0;
-  // if (isNaN(value)) return null;
   return { id: `${matchId}-${id}`, matchId, label, value, betType };
 }
 

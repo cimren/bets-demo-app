@@ -1,5 +1,5 @@
 import React from 'react';
-import { OddItem } from '../types/bulletin';
+import { OddItem } from '../../types/bulletin';
 import styles from './OddCell.module.css';
 
 interface OddCellProps {

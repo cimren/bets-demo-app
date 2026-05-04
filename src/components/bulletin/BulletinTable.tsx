@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useRef } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch } from '../store/store';
-import { selectSelectedOddIds } from '../store/couponSelectors';
+import { AppDispatch } from '../../store/store';
+import { selectSelectedOddIds } from '../../store/couponSelectors';
 import {
   loadBulletin,
   selectBulletinError,
   selectBulletinItems,
   selectBulletinStatus,
-} from '../store/bulletinSlice';
-import { Match } from '../types/bulletin';
+} from '../../store/bulletinSlice';
+import { Match } from '../../types/bulletin';
 import BulletinRow from './BulletinRow';
 import DateHeader from './DateHeader';
 import styles from './BulletinTable.module.css';
