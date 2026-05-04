@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   padding: 8px 16px;
-  background: #141f14;
-  border-bottom: 1px solid #254225;
-  border-left: 3px solid #e8820a;
+  background: var(--bg-page);
+  border-bottom: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--orange);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -13,7 +13,7 @@
 .header span {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #e8820a;
+  color: var(--orange);
   text-transform: capitalize;
   letter-spacing: 0.04em;
 }

@@ -7,10 +7,10 @@
   height: 44px;
   padding: 4px;
   flex-shrink: 0;
-  border: 1px solid rgba(232, 130, 10, 0.35);
+  border: 1px solid var(--orange-border);
   border-radius: 5px;
-  background: rgba(232, 130, 10, 0.08);
-  color: #e8820a;
+  background: var(--orange-bg);
+  color: var(--orange);
   cursor: default;
 }
 
@@ -23,10 +23,10 @@
   height: 44px;
   padding: 4px;
   flex-shrink: 0;
-  border: 1px solid #2a542a;
+  border: 1px solid var(--border-default);
   border-radius: 5px;
-  background: #1e3820;
-  color: #b5ccb5;
+  background: var(--bg-card);
+  color: var(--text-cell);
   cursor: pointer;
   transition:
     background 0.12s ease,
@@ -35,20 +35,20 @@
 }
 
 .cell:hover {
-  background: #284c28;
-  border-color: #3a703a;
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
   color: #fff;
 }
 
 .cell.selected {
-  background: #00c853;
-  border-color: #00c853;
+  background: var(--green);
+  border-color: var(--green);
   color: #fff;
 }
 
 .cell.selected:hover {
-  background: #2ed866;
-  border-color: #2ed866;
+  background: var(--green-hover);
+  border-color: var(--green-hover);
 }
 
 .label {
