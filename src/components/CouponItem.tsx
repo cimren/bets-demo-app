@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { CouponSelection } from '../types';
-import { removeSelection } from '../couponSlice';
+import { CouponSelection } from '../types/coupon';
+import { removeSelection } from '../store/couponSlice';
 import styles from './CouponItem.module.css';
 
 interface CouponItemProps {

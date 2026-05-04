@@ -2,7 +2,7 @@ import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import OddCell from '../components/OddCell';
-import { OddItem } from '../types';
+import { OddItem } from '../types/bulletin';
 
 const mockOdd: OddItem = {
   id: 'match-1-1',

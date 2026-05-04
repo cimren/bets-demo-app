@@ -3,9 +3,9 @@ import {
   selectCouponSelections,
   selectTotalOdd,
   selectSelectedOddIds,
-} from '../selectors';
-import { RootState } from '../../../app/store';
-import { CouponState, CouponSelection } from '../types';
+} from '../store/couponSelectors';
+import { RootState } from '../store/store';
+import { CouponState, CouponSelection } from '../types/coupon';
 
 const buildState = (coupon: Partial<CouponState>): RootState =>
   ({ coupon: { selections: [], totalStake: 1, ...coupon } }) as RootState;

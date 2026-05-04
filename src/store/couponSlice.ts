@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { CouponState, CouponSelection } from './types';
+import { CouponState, CouponSelection } from '../types/coupon';
 
 const initialState: CouponState = {
   selections: [],

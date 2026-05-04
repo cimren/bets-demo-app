@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchBulletin } from './data/bulletinApi';
-import { Match } from './types';
-import { RootState } from '../../app/store';
+import { fetchBulletin } from '../utils/bulletinApi';
+import { Match } from '../types/bulletin';
+import { RootState } from './store';
 
 export const loadBulletin = createAsyncThunk('bulletin/load', fetchBulletin);
 

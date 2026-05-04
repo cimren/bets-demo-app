@@ -4,8 +4,8 @@ import {
   selectCouponSelections,
   selectTotalOdd,
   selectPossibleWin,
-} from '../selectors';
-import { clearCoupon } from '../couponSlice';
+} from '../store/couponSelectors';
+import { clearCoupon } from '../store/couponSlice';
 import CouponItem from './CouponItem';
 import styles from './StickyCoupon.module.css';
 

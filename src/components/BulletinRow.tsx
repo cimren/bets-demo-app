@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Match } from '../types';
+import { Match } from '../types/bulletin';
 import OddCell from './OddCell';
 import styles from './BulletinRow.module.css';
-import { toggleSelection } from '../../../features/coupon/couponSlice';
+import { toggleSelection } from '../store/couponSlice';
 
 interface BulletinRowProps {
   match: Match;

@@ -3,8 +3,8 @@ import couponReducer, {
   toggleSelection,
   removeSelection,
   clearCoupon,
-} from '../couponSlice';
-import { CouponState, CouponSelection } from '../types';
+} from '../store/couponSlice';
+import { CouponState, CouponSelection } from '../types/coupon';
 
 const initialState: CouponState = {
   selections: [],

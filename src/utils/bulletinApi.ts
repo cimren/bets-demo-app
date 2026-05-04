@@ -1,4 +1,4 @@
-import { Match, OddItem } from '../types';
+import { Match, OddItem } from '../types/bulletin';
 
 const API_URL = 'https://nesine-case-study.onrender.com/bets';
 

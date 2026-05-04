@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { RootState } from '../../app/store';
-import { CouponSelection } from './types';
+import { RootState } from './store';
+import { CouponSelection } from '../types/coupon';
 
 export const selectCouponSelections = (state: RootState): CouponSelection[] =>
   state.coupon.selections;
